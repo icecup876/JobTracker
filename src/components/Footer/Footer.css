@@ -1,0 +1,77 @@
+/* Ensure body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Full-page layout for the content */
+.page-content {
+  flex: 1; /* Ensures the content takes full available height */
+  padding-bottom: 100px; /* Space for the footer at the bottom */
+}
+
+/* Footer setup */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  background-color: #f8f8f8;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  z-index: 9999; /* Ensure footer stays on top */
+}
+
+/* Left side of the footer */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0d0e0d; /* Can be customized */
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+/* Footer Links */
+.footer-links ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  text-decoration: underline; /* Underlined links */
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #4CAF50; /* Green on hover */
+}
+
+/* Right side of the footer */
+.footer-right {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer-right p {
+  margin: 0;
+}
